@@ -1,3 +1,6 @@
-<p>
-  zip-search works!
-</p>
+<form (submit)="search()">
+  <input type="text" [(ngModel)]="zipCode">
+  <button>検索</button>
+</form>
+
+{{result | json}}
